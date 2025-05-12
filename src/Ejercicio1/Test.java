@@ -10,7 +10,7 @@ public class Test {
 		}
 		
 		System.out.println(conjunto.pertenece(18));
-		System.out.println(conjunto.pertenece(2));
+		System.out.println(conjunto.pertenece(9));
 		System.out.println(conjunto.pertenece(4));
 		System.out.println(conjunto.imprimirConjunto());
 		conjunto.sacar(7);

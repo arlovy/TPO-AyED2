@@ -42,7 +42,7 @@ public class ConjuntoEspecialTDA implements ConjuntoTDA{
 	}
 	
 	public void sacar(int x) {
-		// Complejidad O(n)
+		// Complejidad O(n) en el peor caso, O(1) en el mejor caso
 		if (!conjuntoVacio()) {
 
 			// Reviso si los primeros nodos tienen el valor a eliminar
@@ -68,7 +68,7 @@ public class ConjuntoEspecialTDA implements ConjuntoTDA{
 	}
 	
 	public boolean pertenece(int x) {
-		// Complejidad O(n)
+		// Complejidad O(n) en el peor caso, O(1) en el mejor caso
 		Nodo pivote = ref;
 		while (pivote != null && pivote.info != x)
 			pivote = pivote.sig;
@@ -81,7 +81,7 @@ public class ConjuntoEspecialTDA implements ConjuntoTDA{
 	}
 	
 	public String imprimirConjunto() {
-		// Complejidad O(n)
+		// Complejidad O(n) en el peor caso, O(1) en el mejor caso
 		if (!conjuntoVacio()) {
 			Nodo pivote = ref;
 			String cadena = "";
